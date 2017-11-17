@@ -1,0 +1,15 @@
+Solution for Ubuntu 12.04, 14.04, 16.04
+=======================================
+"sudo apt-get update && sudo apt-get upgrade"
+|>>
+E: Could not get lock /var/lib/dpkg/lock - open (11: Resource temporarily unavailable)
+E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+|<<
+Type these command in terminal:
+|>>
+sudo fuser -vki /var/lib/dpkg/lock
+sudo fuser -vki /var/cache/apt/archives/lock
+sudo fuser -vki /var/cache/debconf/config.dat
+sudo dpkg --configure -a
+|<<
+-----------------------------------------------
