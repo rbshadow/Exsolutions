@@ -1,4 +1,4 @@
-#Problem [0]
+# Problem [0]
 
 **Update and Upgrade**
 
@@ -10,7 +10,7 @@
 `E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?`
 
 
-#Solution [0]
+# Solution [0]
 
 **Type these command in your terminal:**
 
@@ -22,11 +22,11 @@
 
 `sudo dpkg --configure -a`
 
-#Tips [0]
+# Tips [0]
 
 **How to remove unused Linux headers?**
 
-#Way [0]
+# Way [0]
 
 **Type these command in your terminal:**
 
@@ -34,11 +34,11 @@
 `sudo apt-get purge $(dpkg -l linux-{image,headers}-"[0-9]*" | awk '/ii/{print $2}' | grep -ve "$(uname -r | sed -r 's/-[a-z]+//')") 
 `
 
-#Tips [1]
+# Tips [1]
 
 **How to remove java 7 and install java 8?**
 
-#Way [0]
+# Way [0]
 
 **Type these command in your terminal:**
 
