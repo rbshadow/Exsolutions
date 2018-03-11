@@ -1,4 +1,5 @@
 #Problem [0]
+
 **Update and Upgrade**
 
 "sudo apt-get update && sudo apt-get upgrade"
@@ -10,6 +11,7 @@
 
 
 #Solution [0]
+
 **Type these command in your terminal:**
 
 `sudo fuser -vki /var/lib/dpkg/lock`
@@ -21,9 +23,11 @@
 `sudo dpkg --configure -a`
 
 #Tips [0]
+
 **How to remove unused Linux headers?**
 
 #Way [0]
+
 **Type these command in your terminal:**
 
 
@@ -31,9 +35,11 @@
 `
 
 #Tips [1]
+
 **How to remove java 7 and install java 8?**
 
 #Way [0]
+
 **Type these command in your terminal:**
 
 `sudo rm /var/lib/dpkg/info/oracle-java7-installer*`
